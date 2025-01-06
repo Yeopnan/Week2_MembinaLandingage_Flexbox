@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  border: 10px solid black;
+  border: 10px solid rgb(153, 180, 32);
   height: 90vh;
   column-gap: 10px;
 }
@@ -12,7 +12,7 @@
   border-radius: 15px;
 }
 #box1 {
-  background-color: brown;
+  background-color: rgb(165, 42, 159);
 }
 #box2 {
   background-color: rgb(18, 109, 78);
