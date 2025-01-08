@@ -1,8 +1,272 @@
-container {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: monospace;
+  max-width: 1248px;
+}
+.overall {
+  border: 1px solid #f6f4f0;
+  border-radius: 0px;
+  width: 1248px;
+  height: 3012px;
+  background-color: #f6f4f0;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
+.container1 {
+  border: 1px solid #f6f4f0;
+  border-radius: 5px;
+  height: 138px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background-color: rgb(216, 210, 221);
+  padding: 20px 20px;
+  display: flex;
+  color: rgb(148, 13, 13);
+}
 
-.div {
-  font-family: "Lucida Sans";
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  background-color: transparent;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+.login-btn {
+  background-color: #ffcc00; /* Yellow button */
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+}
+
+.login-btn:hover {
+  background-color: #e6b800;
+}
+
+.container2 {
+  padding: 0;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: rgb(193, 238, 30);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#books1 {
+  color: #f4ba30;
+  font-family: Clash Grotesk Variable;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  text-decoration-skip-ink: none;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  position: absolute;
+  left: -10px;
+}
+#books2 {
+  color: #f4ba30;
+  font-family: Clash Grotesk Variable;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  text-decoration-skip-ink: none;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 250px;
+}
+#books3 {
+  color: #2a2c2e;
+  font-family: Clash Grotesk Variable;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  text-decoration-skip-ink: none;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 530px;
+}
+#books4 {
+  color: #2a2c2e;
+  font-family: Clash Grotesk Variable;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  text-decoration-skip-ink: none;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 250px;
+}
+#books5 {
+  color: #2a2c2e;
+  font-family: Clash Grotesk Variable;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  text-decoration-skip-ink: none;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  position: absolute;
+  left: -10px;
+}
+
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  --dark: #2a2c2e;
+}
+
+body > div {
+  min-height: 100px;
+}
+
+#bestsellers {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  background-color: var(--dark);
+  padding: 44px 24px;
+}
+
+#bestsellers-title {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+#bestsellers-listing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  position: relative;
+
+  flex-grow: 1;
+
+  background-color: white;
+  width: 30%;
+  min-width: 200px;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.card-image {
+  width: 120px;
+  height: 184px;
+  background-color: burlywood;
+  border-radius: 16px;
+}
+
+.card-content {
+  flex-grow: 1;
+
+  min-width: 100px;
+}
+
+.card-cta {
+  width: 40px;
+}
+
+.card-cta > button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 100%;
+  background-color: var(--dark);
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.alternative {
+  /* position: absolute; */
+  top: 20px;
+  left: 20px;
+
+  translate: -20px;
+}
+
+.font-mono {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.font-azo {
+  font-family: "Azo Sans", sans-serif;
+}
+
+.font-reset {
+  font-family: initial;
+}
+
+.font-segoi {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.debug {
+  border: 1px solid red;
 }
